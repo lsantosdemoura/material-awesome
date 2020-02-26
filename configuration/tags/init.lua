@@ -5,27 +5,21 @@ local apps = require('configuration.apps')
 
 local tags = {
   {
-    icon = icons.chrome,
-    type = 'chrome',
+    icon = icons.firefox,
+    type = 'firefox',
     defaultApp = apps.default.browser,
+    screen = 1
+  },
+  {
+    icon = icons.terminal,
+    type = 'terminal',
+    defaultApp = apps.default.terminal,
     screen = 1
   },
   {
     icon = icons.code,
     type = 'code',
     defaultApp = apps.default.editor,
-    screen = 1
-  },
-  {
-    icon = icons.social,
-    type = 'social',
-    defaultApp = apps.default.social,
-    screen = 1
-  },
-  {
-    icon = icons.game,
-    type = 'game',
-    defaultApp = apps.default.game,
     screen = 1
   },
   {
@@ -45,7 +39,13 @@ local tags = {
     type = 'any',
     defaultApp = apps.default.rofi,
     screen = 1
-  }
+  },
+  {
+    icon = icons.slack,
+    type = 'social',
+    defaultApp = apps.default.slack,
+    screen = 1
+  },
 }
 
 awful.layout.layouts = {

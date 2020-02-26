@@ -30,12 +30,12 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 - (Optional) [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) as icon theme
 - (Optional) [lxappearance](https://sourceforge.net/projects/lxde/files/LXAppearance/) to set up the gtk and icon theme
 - (Optional) [xbacklight](https://www.x.org/archive/X11R7.5/doc/man/man1/xbacklight.1.html) for adjusting brightness on laptops (disabled by default)
-- (Optional) [kde-spectacle](https://kde.org/applications/utilities/org.kde.spectacle) my personal screenshot utility of choice, can be replaced by whichever you want, just remember to edit the screenshot utility script
+- (Optional) [flameshot](https://flameshot.js.org) my personal screenshot utility of choice, can be replaced by whichever you want, just remember to edit the screenshot utility script
 
 ### 2) Clone the configuration
 
 ```
-git clone https://github.com/HikariKnight/material-awesome.git ~/.config/awesome
+git clone https://github.com/lsantosdemoura/material-awesome.git ~/.config/awesome
 ```
 
 > Awesome 4.3 is so new that most of the distributions have not updated it yet. If you want to install this config on Awesome 4.2 (current version on depo) use the specific awesome-4.2 branch (not in development by me)
@@ -69,3 +69,13 @@ The project is split in functional directories and in each of them there is a re
 * [Module](./module) contain all the **features** available
 * [Theme](./theme) hold all the **aestetic** aspects
 * [Widget](./widget) contain all the **widgets** available
+
+
+TODO
+- [ ] duplicated screens
+- [ ] Bluetooth not showing
+- [ ] screenshot not on flameshot
+- [ ] floating panel not showing icon
+- [ ] power manager not showing on click
+- [ ] setting random images for background
+- [ ] flux

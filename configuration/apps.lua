@@ -8,29 +8,28 @@ local rofi_command = 'env /usr/bin/rofi -dpi ' .. get_dpi() .. ' -width ' .. wit
 return {
   -- List of apps to start by default on some actions
   default = {
-    terminal = 'konsole',
+    terminal = 'terminator',
     rofi = rofi_command,
     lock = 'i3lock-fancy',
-    quake = 'konsole',
-    screenshot = '~/.config/awesome/configuration/utils/screenshot -m',
-    region_screenshot = '~/.config/awesome/configuration/utils/screenshot -r',
-    delayed_screenshot = 'sleep 10 ; ~/.config/awesome/configuration/utils/screenshot -r',
-    
+    quake = 'terminator',
+    screenshot = 'flameshot',
+    region_screenshot = 'flameshot',
+
     -- Editing these also edits the default program
     -- associated with each tag/workspace
-    browser = 'env vivaldi',
-    editor = 'code', -- gui text editor
-    social = 'env discord',
-    game = rofi_command,
-    files = 'nautilus',
-    music = rofi_command
+    browser = 'firefox',
+    editor = 'atom', -- gui text editor
+    files = 'nemo',
+    music = 'spotify',
+    slack = 'slack',
   },
   -- List of apps to start once on start-up
   run_on_start_up = {
     'compton --config ' .. filesystem.get_configuration_dir() .. '/configuration/compton.conf',
     'nm-applet --indicator', -- wifi
-    --'blueberry-tray', -- Bluetooth tray icon
-    --'xfce4-power-manager', -- Power manager
+    'blueberry-tray', -- Bluetooth tray icon
+    'flameshot', -- Gotta screenshot
+    'xfce4-power-manager', -- Power manager
     'ibus-daemon --xim', -- Ibus daemon for keyboard
     'scream -u -p 4011 -i virbr1', -- scream audio sink
     'numlockx on', -- enable numlock
